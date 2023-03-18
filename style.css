@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+section {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border: 2px solid rgb(255, 255, 255);
+    padding: 15px;
+}
+
+section div {
+    background-color: rgb(224, 223, 223);
+    width: 100%;
+    text-align: center;
+    min-height: 150px;
+    color: rgb(29, 27, 28);
+    position: relative;
+    padding-top: 50px;
+    border: 3px solid rgb(73, 63, 66);
+}
+
+.sushi, .biryani, .fried-rice {
+    width: 10rem;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    background-color: #396fc5;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: 3px solid rgb(64, 46, 52);
+    border-top: none;
+    border-right: none;
+    padding: 0.3em;
+}
+.fried-rice{
+    background-color: #E40066;
+}
+.biryani {
+    background-color: #EAC435;
+}
+
+
+
+
+/* large screen */
+@media (min-width: 992px){
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+/* medium screen */
+@media (min-width: 768px) and (max-width: 991px)
+{
+    .col-md-6 {
+        float: left;
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+        float: left;
+        margin: 1em auto;
+    }
+}
+
+/* small screen */
+@media (max-width: 767px){
+    .col-sm-12 {
+        float: left;
+        width: 100%;
+    }
+   
+}
